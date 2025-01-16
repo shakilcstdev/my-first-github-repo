@@ -175,8 +175,25 @@ footer input[type="text"], footer input[typer="email"], footer textarea {
         display: none;
     }
  @media screen and (max-width: 576px) {
-    .skills-containers, .resume-container, footer, .about-items{
+    .skills-containers, .resume-container,
+    nav, nav > ul, footer, .about-items, .banner{
       flex-direction: column;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+
+    .header{
+        background-image: none;
     }
     footer{
         padding: 20px;
